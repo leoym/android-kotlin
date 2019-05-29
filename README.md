@@ -58,7 +58,38 @@ botoes
 val 
 
 var
+14) Tratamento de dados
+IsNotBlank
 
+15) Case
+If
+
+16) New activity
+Drawer - Intent
+
+
+17) Permission
+<uses-permission android:name="android.permission.INTERNET" /> 
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+18) Widgets
+
+WebView
+
+19) GetEstraString
+
+Intent recebido
+
+20) Envio de dados entre 
+activities
+            intent = Intent(this, SettingsActivity::class.java)
+            intent.putExtra("", nome_email)
+            startActivity(intent)
+
+        val dado = intent.getStringExtra("NomeEmail")
+        tvUsuario.setText(dado)
+
+Toast.makeText(this, "Message", Toast.LENGTH_LONG).show();
 
 Referencia
 
@@ -66,3 +97,6 @@ https://developer.android.com/kotlin?hl=pt-BR
 https://developer.android.com/kotlin/get-started?hl=pt-br#kotlin
 https://medium.com/androiddevelopers/tagged/kotlin
 https://kotlinlang.org/docs/reference/basic-syntax.html
+https://play.kotlinlang.org
+
+
