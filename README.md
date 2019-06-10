@@ -106,7 +106,6 @@ https://github.com/Kotlin/anko
 A6 e A7
 
 
-Aulas 
 A6 - Aula - Programação Android com Kotlin
 
 1 - Conceitos básicos 
@@ -237,54 +236,54 @@ Main
 
 8 - Verificando e testando o código
 
-QA
+	QA
 
 9 - Ajustes 
 
-TextBox
-Button
+	TextBox
+	Button
 
 10 - Novo código
 
-fun efeturarBusca(language: String) {
-}
+	fun efeturarBusca(language: String) {
+	}
 
-btQuery.setOnClickListener {
-}
+	btQuery.setOnClickListener {
+	}
 
-https://github.com/kassiano
+	https://github.com/kassiano
 
 
 A7 - Aula Banco de Dados
 
-Setup do Banco de Dados
+	Setup do Banco de Dados
 
-class DatabaseHelper (context: Context?):
-    SQLiteOpenHelper(context, "ocean_db", null, 1) {
-    override fun onCreate(db: SQLiteDatabase?) {
-        var sql = """
-            CREATE TABLE contatos ( id integer PRIMARY KEY,
-            nome TEXT,
-            telefone TEXT
-            );
-        """.trimIndent()
+	class DatabaseHelper (context: Context?):
+    	SQLiteOpenHelper(context, "ocean_db", null, 1) {
+    	override fun onCreate(db: SQLiteDatabase?) {
+        	var sql = """
+            	CREATE TABLE contatos ( id integer PRIMARY KEY,
+            	nome TEXT,
+            	telefone TEXT
+            	);
+        	""".trimIndent()
 
-        db?.execSQL(sql)
+       	 	db?.execSQL(sql)
 
-    }
+	    }
 
-    override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
+	    override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
+	
+	    }
+	}
 
-    }
-}
 
 Criar uma função que salva dados
-
+	
     
-    fun salvarContato(nome: String, telefone: String) {
+    	fun salvarContato(nome: String, telefone: String) {
         TODO("BD")
         tvResult.text = "Gravar contato: $nome - $telefone"
-    }
-
+	}
 
 
