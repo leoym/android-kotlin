@@ -1,0 +1,8 @@
+{
+  "id":"001",
+  "nome": "device-01", "desc":"Device 01",
+  "data" : {
+    "temp" : "25", "umidade" : "65", "status" : "on"
+  }
+
+}
